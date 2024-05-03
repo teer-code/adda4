@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Open Bank Account</title>
+</head>
+<body>
+  <center>
+ <h1>Open your Account in Novus</h1>
+ <hr><br><br><br>
+ <form action="submit_account.html" method="post">
+   <label for="firstName">First Name:</label>
+   <input type="text" id="firstName" name="firstName" required>
+   <br>
+   <label for="middleName">Middle Name:</label>
+   <input type="text" id="middleName" name="middleName">
+   <br>
+   <label for="lastName">Last Name:</label>
+   <input type="text" id="lastName" name="lastName" required>
+   <br>
+   <label for="dob">Date of Birth:</label>
+   <input type="date" id="dob" name="dob" required>
+   <br>
+   <label for="accountType">Account Type:</label>
+   <select id="accountType" name="accountType" required>
+     <option value="Select">--Select--</option>
+     <option value="minor">Minor</option>
+     <option value="savings">Savings</option>
+     <option value="current">Current</option>
+   </select>
+   <br>
+   <label for="panCard">PAN Card:</label>
+   <input type="text" id="panCard" name="panCard" required>
+   <br>
+   <label for="photo">Upload PAN Card</label>
+   <input type="file" id="photo" name="photo" accept="image/*" required>
+   <br>
+   <label for="aadharCard">Aadhar Card:</label>
+   <input type="text" id="aadharCard" name="aadharCard" required>
+  <br>
+   <label for="photo">Upload Aadhar Identity:</label>
+   <input type="file" id="photo" name="photo" accept="image/*" required>
+   <br>
+   <br>
+   <button type="submit">Submit</button>
+ </form>
+</center>
+</body>
+</html>
